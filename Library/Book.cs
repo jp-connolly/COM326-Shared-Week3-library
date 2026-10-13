@@ -56,7 +56,7 @@ namespace Library
             set
             {
                 // Ensure name does not contain any numbers
-                if (!value.Any(char.IsDigit) && value != "")
+                if (value.Any(char.IsDigit) && value != "")
                 {
                     isbn = value;
                 }
